@@ -10,8 +10,24 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        NSMutableArray *firstArray = [[NSMutableArray alloc] init];
+        
+        [firstArray addObject: @"One"];
+        [firstArray addObject: @"Two"];
+        [firstArray addObject: @"Three"];
+        [firstArray addObject: @"Four"];
+        [firstArray addObject: @"Five"];
+        [firstArray insertObject: @"Zero" atIndex: 0];
+        
+        for(int i = 0; i < [firstArray count]; i++) {
+            NSLog(@"%@", [firstArray objectAtIndex: i]);
+        }
+        
+        
+        //Release memory
+        firstArray = nil;
+        
     }
     return 0;
 }
