@@ -24,6 +24,10 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%@", [firstArray objectAtIndex: i]);
         }
         
+        for(NSString *item in firstArray) {
+            NSLog(@"%@", item);
+        }
+        
         
         //Release memory
         firstArray = nil;

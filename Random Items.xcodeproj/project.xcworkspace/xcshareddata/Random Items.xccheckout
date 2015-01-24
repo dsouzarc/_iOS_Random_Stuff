@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DC4A5278-038B-4534-9B3B-0EC7ECDBF7F1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Random Items</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>12E84007768DD4416F63CEBC4EF9921D35AF353F</key>
+		<string>https://github.com/dsouzarc/_iOS_Random_Stuff.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Random Items.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>12E84007768DD4416F63CEBC4EF9921D35AF353F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dsouzarc/_iOS_Random_Stuff.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>12E84007768DD4416F63CEBC4EF9921D35AF353F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>12E84007768DD4416F63CEBC4EF9921D35AF353F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Random%20Items</string>
+		</dict>
+	</array>
+</dict>
+</plist>
