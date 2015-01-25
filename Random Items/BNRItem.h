@@ -26,5 +26,6 @@
 - (int) value;
 
 - (NSDate *) dateCreated;
+- (NSString *) description;
 
 @end

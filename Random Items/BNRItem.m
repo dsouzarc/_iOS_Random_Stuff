@@ -45,4 +45,11 @@
     return _dateCreated;
 }
 
+- (NSString *)description
+{
+    NSString *itemDeets = [[NSString alloc] initWithFormat:@"%@ (%@) Cost: $%d, recorded on: %@",
+                           self.itemName, self.serialNumber, self.value, self.dateCreated];
+    return itemDeets;
+}
+
 @end

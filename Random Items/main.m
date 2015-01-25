@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRItem.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -34,7 +35,13 @@ int main(int argc, const char * argv[]) {
         float aFloat = 3.0;
         NSLog(@"%f", aFloat);
         
+        BNRItem *firstItem = [[BNRItem alloc] init];
+        [firstItem setItemName:@"Macbook Pro"];
+        [firstItem setSerialNumber:@"A1B2C3"];
+        firstItem.value = 3000;
         
+        NSLog(@"%@ %d %@ %@", firstItem.itemName, firstItem.value, firstItem.serialNumber, firstItem.dateCreated);
+        NSLog(@"AKA: %@", firstItem);
     }
     return 0;
 }
