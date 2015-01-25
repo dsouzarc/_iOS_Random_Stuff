@@ -28,9 +28,12 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%@", item);
         }
         
-        
         //Release memory
         firstArray = nil;
+        
+        float aFloat = 3.0;
+        NSLog(@"%f", aFloat);
+        
         
     }
     return 0;
