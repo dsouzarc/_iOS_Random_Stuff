@@ -10,6 +10,22 @@
 
 @implementation BNRItem
 
+- (instancetype) initWithItemName:(NSString *)name value:(int)value serialNumber:(NSString *)serial
+{
+    //Super class initializer
+    self = [super init];
+    
+    //If the initializer worked
+    if(self) {
+        _itemName = name;
+        _value = value;
+        _serialNumber = serial;
+        _dateCreated = [[NSDate alloc] init];
+    }
+    
+    return self;
+}
+
 - (void) setItemName:(NSString *)name
 {
     _itemName = name;

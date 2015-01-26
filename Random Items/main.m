@@ -42,6 +42,11 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"%@ %d %@ %@", firstItem.itemName, firstItem.value, firstItem.serialNumber, firstItem.dateCreated);
         NSLog(@"AKA: %@", firstItem);
+        
+        firstItem = nil;
+        
+        firstItem = [[BNRItem alloc] initWithItemName:@"New MBPro" value:6000 serialNumber:@"D4E5F6"];
+        NSLog(@"Using new constructor: %@", firstItem);
     }
     return 0;
 }
