@@ -19,8 +19,9 @@
     NSInteger randomItem = arc4random() % [randomItems count];
     
     NSString *randomName = [NSString stringWithFormat:@"%@ %@",
-                            [randomItemAdjectives objectAtIndex:randomAdjective],
-                            [randomItems objectAtIndex:randomItem]];
+                            randomItemAdjectives[randomAdjective],
+                            randomItems[randomItem]];
+                            
     
     NSString *randomSerialNumber = [NSString stringWithFormat:@"%d", arc4random()];
     
