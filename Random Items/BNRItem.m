@@ -12,8 +12,21 @@
 
 + (instancetype) randomItem
 {
+    NSArray *randomItemAdjectives = @[@"Big", @"Red", @"Blue", @"Yellow", @"Skinny"];
+    NSArray *randomItems = @[@"Shirt", @"Pant", @"Socks", @"Shoes"];
     
+    NSInteger randomAdjective = arc4random() % [randomItemAdjectives count];
+    NSInteger randomItem = arc4random() % [randomItems count];
     
+    NSString *randomName = [NSString stringWithFormat:@"%@ %@",
+                            [randomItemAdjectives objectAtIndex:randomAdjective],
+                            [randomItems objectAtIndex:randomItem]];
+    
+    NSString *randomSerialNumber = [NSString stringWithFormat:@"%d", arc4random()];
+    
+    BNRItem *theItem = [[self alloc] initWithItemName:randomName value:arc4random() serialNumber:randomSerialNumber];
+    
+    return theItem;
 }
 
 //"Designated initializer" that calls parent
