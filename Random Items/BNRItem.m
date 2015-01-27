@@ -10,6 +10,13 @@
 
 @implementation BNRItem
 
++ (instancetype) randomItem
+{
+    
+    
+}
+
+//"Designated initializer" that calls parent
 - (instancetype) initWithItemName:(NSString *)name value:(int)value serialNumber:(NSString *)serial
 {
     //Super class initializer
@@ -24,6 +31,18 @@
     }
     
     return self;
+}
+
+//Calls designated initializer
+- (instancetype) initWithItemName:(NSString *)name
+{
+    return [self initWithItemName:name value:0 serialNumber:@"1A"];
+}
+
+//Calls constructor that calls designated initializer
+- (instancetype) init
+{
+    return [self initWithItemName:@"Blank Item"];
 }
 
 - (void) setItemName:(NSString *)name

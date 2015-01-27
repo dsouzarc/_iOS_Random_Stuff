@@ -16,14 +16,15 @@
     NSDate *_dateCreated;
 }
 
++ (instancetype) randomItem;
+
 - (instancetype) initWithItemName:(NSString *) name
                             value:(int) value
                             serialNumber:(NSString *) serial;
 
 - (instancetype) initWithItemName:(NSString *) name;
 
-
-
+- (instancetype) init;
 
 - (void) setItemName:(NSString *) name;
 - (NSString *) itemName;
