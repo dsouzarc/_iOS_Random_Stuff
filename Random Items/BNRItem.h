@@ -38,4 +38,6 @@
 - (NSDate *) dateCreated;
 - (NSString *) description;
 
+- (void) dealloc;
+
 @end

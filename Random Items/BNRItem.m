@@ -101,4 +101,9 @@
     return itemDeets;
 }
 
+- (void) dealloc
+{
+    NSLog(@"Destroyed: %@", self);
+}
+
 @end
