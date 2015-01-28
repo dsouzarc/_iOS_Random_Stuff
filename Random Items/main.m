@@ -35,22 +35,24 @@ int main(int argc, const char * argv[]) {
         float aFloat = 3.0;
         NSLog(@"%f", aFloat);
         
+        firstArray = [[NSMutableArray alloc] init];
+        
         BNRItem *firstItem = [[BNRItem alloc] init];
         [firstItem setItemName:@"Macbook Pro"];
         [firstItem setSerialNumber:@"A1B2C3"];
         firstItem.value = 3000;
         
-        //NSLog(@"%@ %d %@ %@", firstItem.itemName, firstItem.value, firstItem.serialNumber, firstItem.dateCreated);
-        //NSLog(@"AKA: %@", firstItem);
+        NSLog(@"%@ %d %@ %@", firstItem.itemName, firstItem.value, firstItem.serialNumber, firstItem.dateCreated);
+        NSLog(@"AKA: %@", firstItem);
         
         [firstArray addObject: firstItem];
    
         firstItem = nil;
         NSLog(@"First item value: %@", firstItem);
-        NSLog(@"Last first array value: %@", firstArray[firstArray.count]);
+        NSLog(@"Last first array value: %@", [firstArray objectAtIndex: 0]);
         
         firstItem = [[BNRItem alloc] initWithItemName:@"New MBPro" value:6000 serialNumber:@"D4E5F6"];
-        //NSLog(@"Using new constructor: %@", firstItem);
+        NSLog(@"Using new constructor: %@", firstItem);
     }
     return 0;
 }
