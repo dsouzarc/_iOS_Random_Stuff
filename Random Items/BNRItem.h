@@ -15,7 +15,9 @@
 
 @property (nonatomic, copy) NSString *itemName;
 @property (nonatomic, copy) NSString *serialNumber;
-@property (nonatomic) int value;
+
+//@property (nonatomic) int value;
+@synthesize age = _age;
 
 @property (nonatomic, readonly, strong) NSDate *dateCreated;
 
